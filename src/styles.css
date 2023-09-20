@@ -22,18 +22,17 @@ ul {
 .headerBar ul {
     display: flex;
     gap: 2.6rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .mainContent {
     display: flex;
     min-height: 75vh;
     max-height: 1200px;
-    height: 1000px;
     min-width: 100vw;
     align-items: center;
     justify-content: center;
-    background-image: url("blurred-cocktail-bar-closed.jpg");
+    background-image: url("drink_imgs/blurred-cocktail-bar-closed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -43,57 +42,74 @@ ul {
     max-width: 700px;
     width: 700px;
     height: 90%;
-    background-color: gray;
+    background-color: lightgoldenrodyellow;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
     border-radius: 25px;
     overflow-y: scroll;
 }
 
-.menuPage, .menuPage ul {
-    /*display: none;*/
+.menuPage, .locationPage, .aboutPage, .menuPage ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.menuPage p {
+.menuPage {
+    height: 1000px;
+    margin: 5rem 0;
+}
+
+.menu, .menuPage p {
     font-size: 2rem;
     font-weight: 600;
-    color: gold;
-    margin: 1rem 0;
+    width: 90%;
+    color: black;
+    margin: 1.2rem 0;
+}
+
+.menu {
+    border-bottom: 2px solid black;
 }
 
 .menuPage .subMenu {
     font-size: 1.5rem;
     font-weight: 400;
-    color: gold;
+    color: black;
     margin: 1rem 0;
+    width: 70%;
+    border-bottom: 2px solid black;
 }
 
 .drinkCard {
     display: grid;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
+    background-color: black;
     width: 80%;
     min-height: 160px;
     max-height: 160px;
     grid-template-columns: 60% 40%;
     grid-template-rows: 20% 80%;
     margin: 1rem 0;
-    border-radius: 10px;
 }
 
 .drinkCard p {
     font-size: 1rem;
     font-weight: 400;
-    color: black;
+    color: white;
     margin: 0;
+    margin-top: 1rem;
+    padding: 0 1rem;
 }
 
 .drinkCard .drinkName {
     font-size: 1.2rem;
     font-weight: 600;
-    color: black;
+    color: white;
+    margin-top: 1rem;
 }
 
 .drinkCard img {
@@ -108,10 +124,24 @@ ul {
 
 .locationPage {
     display: none;
+    height: 400px;
+}
+
+.locationContent {
+    width: 90%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.locationPage img {
+    height: auto;
+    width: 40%;
+    margin-left: 15rem;
 }
 
 .aboutPage {
     display: none;
+    height: 400px;
 }
 
 .footerBar  {
