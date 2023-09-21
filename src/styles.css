@@ -19,10 +19,13 @@ ul {
     font-size: 2rem;
 }
 
-.headerBar ul {
+.headerBar ul, .headerBar ul button {
     display: flex;
     gap: 2.6rem;
     font-size: 1.2rem;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 
 .mainContent {
